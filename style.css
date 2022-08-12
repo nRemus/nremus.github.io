@@ -25,11 +25,11 @@ h1{
 }
 
 h2{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 p {
-   font-size: 18px;
+   font-size: 16px;
    color: #fff; 
 }
 
@@ -70,10 +70,6 @@ p {
     margin: 0 7%;
 }
 
-
-.about {
-    height: 100vh;
-}
 
 @media only screen and (max-width: 769px) {
     p {
@@ -168,12 +164,24 @@ p {
     background-image: url("./img/remus-bg.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 90%;
-    width: auto;
+}
+
+@media only screen and (max-width: 850px) {
+    .hero-img img {
+        position: relative;
+        right: 40px;
+    }
+}
+
+@media only screen and (min-width: 796px) {
+    .hero-img img {
+        height: 90%;
+        width: auto;
+    }
 }
 
 .about-me {
-    height: calc(40vh - 80px);
+    height: 200px;
     background-color: #303231;
     width: 100vw;
     display: flex;
